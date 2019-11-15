@@ -1,9 +1,27 @@
-<div class="container">
+
+<div class="navbar-lewagon">
   <h2>Fancy Cocktails:</h2>
-    <ul>
-    <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail)%></li>
-    <% end %>
-  </ul>
-  <%= link_to "Add new cocktail", new_cocktail_path %>
+  <div class="frame">
+    <div class="button">
+      <span><%= link_to "Add new cocktail", new_cocktail_path %></span>
+      <svg>
+      <polyline class="o1" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+      <polyline class="o2" points="0 0, 150 0, 150 55, 0 55, 0 0"></polyline>
+    </svg>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <% @cocktails.each do |cocktail| %>
+    <div class="cards-list">
+      <div class="card">
+        <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+        <div class="card_title title-white">
+        <p><%= link_to cocktail.name, cocktail_path(cocktail)%></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>

@@ -1,12 +1,16 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+
+}
+
+.navbar-lewagon h2 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-align: center;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+
